@@ -1,15 +1,14 @@
-﻿@using BlazorWebAssembly
-@using Microsoft.AspNetCore.Components.Routing
+﻿@using Microsoft.AspNetCore.Components.Routing
 @using Microsoft.AspNetCore.Components.Web
 
 <Router AppAssembly="@typeof(BlazorWebAssembly.App).Assembly">
     <Found Context="routeData">
-        <RouteView RouteData="@routeData" DefaultLayout="@typeof(BlazorWebAssembly.Shared.MainLayout)" />
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(BlazorWebAssembly.View.Shared.MainLayout)" />
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
     </Found>
     <NotFound>
         <PageTitle>Not found</PageTitle>
-        <LayoutView Layout="@typeof(BlazorWebAssembly.Shared.MainLayout)">
+        <LayoutView Layout="@typeof(BlazorWebAssembly.View.Shared.MainLayout)">
             <p role="alert">Sorry, there's nothing at this address.</p>
         </LayoutView>
     </NotFound>
