@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace BlazorWebAssembly.ViewModels
+namespace BlazorWebAssembly.ViewModels.Adstract
 {
 	public abstract class BaceViewModels : INotifyPropertyChanged, IDisposable
 	{
