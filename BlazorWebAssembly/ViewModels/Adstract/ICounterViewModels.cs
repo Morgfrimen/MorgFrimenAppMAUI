@@ -6,5 +6,5 @@ public interface ICounterViewModels
 {
 	public int Couters { get; set; }
 
-	public ICommand IncrementCommand{get;}
+	public ICommand IncrementCommand { get; }
 }

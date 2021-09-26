@@ -2,10 +2,10 @@
 
 namespace BlazorWebAssembly.Command
 {
-	public sealed class RelayCommand   : ICommand
+	public sealed class RelayCommand : ICommand
 	{
-	private readonly Action<object> _execute;
-	private readonly Func<object,bool>? _executeCan;
+		private readonly Action<object> _execute;
+		private readonly Func<object, bool>? _executeCan;
 
 		public RelayCommand(Action<object> execute, Func<object, bool>? executeCan = null)
 		{
