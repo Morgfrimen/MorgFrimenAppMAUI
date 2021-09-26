@@ -12,7 +12,8 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
 #region ViewModels global
-builder.Services.AddScoped<ICounterViewModels, CounterViewModels>();
+builder.Services.AddScoped<ICounterViewModels, CounterViewModels>(); 
+builder.Services.AddScoped<IIndexViewModels, IndexViewModels>();
 #endregion
 
 await builder.Build().RunAsync();
