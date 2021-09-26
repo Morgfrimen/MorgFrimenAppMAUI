@@ -9,19 +9,3 @@
 
 <button class="btn btn-primary" @onclick="vm.IncrementCommand.Execute">Click me</button>
 
-@code {
-
-	protected override async Task OnInitializedAsync()
-	{
-		((CounterViewModels)vm).PropertyChanged += async (sender, e) =>
-		{
-			await InvokeAsync(() =>
-			{
-				StateHasChanged();
-			});
-		};
-		await base.OnInitializedAsync();
-	}
-
-	
-}
