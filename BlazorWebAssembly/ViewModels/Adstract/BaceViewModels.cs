@@ -7,14 +7,14 @@ namespace BlazorWebAssembly.ViewModels.Adstract
 {
 	public abstract class BaceViewModels : ComponentBase, INotifyPropertyChanged, IDisposable
 	{
-		public BaceViewModels()
+
+		protected override Task OnInitializedAsync()
 		{
-			PropertyChanged+=async (sender,e) => await InvokeAsync(() =>
-			{
-				StateHasChanged();
-			});
+			if (PropertyChanged is null)
+				PropertyChanged += async (sender, e) => await InvokeAsync(()=>StateHasChanged());
+			return base.OnInitializedAsync();
 		}
-		
+
 		public event PropertyChangedEventHandler? PropertyChanged;
 		protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
 		{
