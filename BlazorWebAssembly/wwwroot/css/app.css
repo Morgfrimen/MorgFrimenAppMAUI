@@ -23,7 +23,7 @@ span,.spanNavMenuItem{
 }
 
 .content {
-    padding-top: 1.1rem;
+    padding-top: 1.0rem;
 }
 
 .valid.modified:not([type=checkbox]) {
