@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWebAssembly", "Blazor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MorgFrimenApp", "MorgFrimenApp\MorgFrimenApp\MorgFrimenApp.csproj", "{0F4E9EB2-F5CB-4CDB-B568-76985DA2CFD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTelegramBot", "MyTelegramBot\MyTelegramBot.csproj", "{2866EF08-BCAC-4F7D-9B09-F7E62D424877}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{0F4E9EB2-F5CB-4CDB-B568-76985DA2CFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F4E9EB2-F5CB-4CDB-B568-76985DA2CFD9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0F4E9EB2-F5CB-4CDB-B568-76985DA2CFD9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2866EF08-BCAC-4F7D-9B09-F7E62D424877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2866EF08-BCAC-4F7D-9B09-F7E62D424877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2866EF08-BCAC-4F7D-9B09-F7E62D424877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2866EF08-BCAC-4F7D-9B09-F7E62D424877}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
